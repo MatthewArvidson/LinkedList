@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <fieldset>
+        <legend>Add a link</legend>
+        <h1>
+          Linked
+          <img src="images/linked-list-logo.png" alt="A logo that links two ovals together, much like two links in a chain" title="Linked List" />
+          List
+        </h1>
+        <form>
+          <label for="website-title">Website title</label>
+          <input type="text" class="website-title-input" placeholder="Website Title">
+          <p class="title-error">Title required</p>
+          <label for="website-url-input">Website URL</label>
+          <input type="text" class="website-url-input" placeholder="Website URL">
+          <p class="url-error">Valid URL required</p>
+          <button type="submit" class="enter-button">Enter</button>
+        </form>
+      </fieldset>
+    </header>
+    <main class="linked-list-tile-container">
+      <section class="linked-list-box">
+        <article class="website-title-output"><h2>The Website Title</h2></article>
+        <article class="website-url-output">www.websiteurl.com</article>
+        <span class="read-delete-links"><article class="read-link"><h3 class="read"><a>Read</a></h3></article>
+        <article class="delete-link"><h3 class="delete"><a>Delete</a></h3></article></span>
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript" src="java.js"></script>
+</html>

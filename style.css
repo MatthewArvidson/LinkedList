@@ -1,0 +1,170 @@
+body {
+  background-color: #cfd8dc;
+  font-family: Open Sans, sans-serif;
+  color: #455a64;
+  font-size: 1.3em;
+  margin: 0px;
+  display: flex;
+}
+
+header {
+  background-color: #455a64;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  width: 50vw;
+  display: flex;
+  height: 100vh;
+}
+
+fieldset {
+  border: 0;
+  padding: 1em;
+  display: block;
+  width: 15em;
+  margin: auto;
+}
+
+fieldset p {
+  color: #f05a28;
+  font-weight: 800;
+  visibility: hidden;
+  margin: 0 auto;
+}
+
+legend {
+  display: none;
+}
+
+input {
+  width: 15em;
+  font-size: 1.5em;
+  margin: auto;
+  margin-top: .5em;
+  display: block;
+  border: 2px solid #C0C2C4;
+}
+
+input::placeholder {
+  color: #C0C2C4;
+}
+
+label {
+  display: none;
+}
+
+button {
+  width: 19em;
+  font-size: 1.2em;
+  height: 2em;
+  margin: auto;
+  margin-top: .5em;
+  border: 0;
+  background: #ffc107;
+  font-weight: 800;
+  color: #ffffff;
+  display: block;
+}
+
+button:hover {
+  background-color: #ffd773;
+}
+
+.website-url-output {
+  padding-bottom: 0.75em;
+  padding-top: 0.75em;
+}
+
+h1 {
+  font-size: 3.2em;
+  margin: auto;
+  font-weight: 800;
+}
+
+h1 img {
+  height: .8em;
+  width: auto;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.2em;
+  margin: 0;
+  padding-bottom: .3em;
+  overflow: hidden;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: -0.5em;
+  padding: 0.5em;
+  display: block;
+  overflow: hidden;
+}
+
+h3 a {
+  color: #607d8b;
+}
+
+a {
+  font-weight: 400;
+  color: #455a64;
+  text-decoration-color: #CDD6DB;
+}
+
+a:hover {
+  font-weight: 800;
+  text-decoration-color: #ffc107;
+  color: #455a64;
+}
+
+p {
+  display: inline-block;
+  margin: auto;
+  margin-top: .3em;
+  width: 50%;
+}
+
+main {
+  display: inline-block;
+  color: #455a64;
+  width: 50vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.linked-list-box {
+  margin: 1em;
+  border: 1px solid #607d8b;
+  padding: .5em 1em;
+  background-color: #ffffff;
+}
+
+.website-title-output {
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.website-url-output {
+    border-top: 1px solid #cfd8dc;
+}
+.read {
+  text-decoration-color: #cfd8dc;
+}
+
+.delete {
+  text-decoration-color: #cfd8dc;
+}
+
+.read-delete-links{
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  border-top: 1.5px solid #cfd8dc;
+}
+
+.read-link {
+  text-align: left;
+}
