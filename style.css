@@ -75,6 +75,13 @@ button:hover {
   padding-top: 0.75em;
 }
 
+.linked-list-box {
+  margin: 1em;
+  border: 1px solid #607d8b;
+  padding: .5em 1em;
+  background-color: #ffffff;
+}
+
 h1 {
   font-size: 3.2em;
   margin: auto;
@@ -94,7 +101,15 @@ h2 {
   overflow: hidden;
 }
 
-h3 {
+.linked-list-box-read {
+  background-color: #F2F4F4;
+}
+
+.linked-list-box-read .read {
+  color: #F05A28;
+}
+
+a {
   font-weight: 400;
   font-size: 1em;
   margin: 0;
@@ -102,13 +117,7 @@ h3 {
   padding: 0.5em;
   display: block;
   overflow: hidden;
-}
-
-h3 a {
   color: #607d8b;
-}
-
-a {
   font-weight: 400;
   color: #455a64;
   text-decoration-color: #CDD6DB;
@@ -133,13 +142,6 @@ main {
   width: 50vw;
   height: 100vh;
   overflow-y: scroll;
-}
-
-.linked-list-box {
-  margin: 1em;
-  border: 1px solid #607d8b;
-  padding: .5em 1em;
-  background-color: #ffffff;
 }
 
 .website-title-output {

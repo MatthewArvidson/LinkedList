@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="websitewaters-island01-stage03/css/normalize.css" type="text/css" media="scren"> -->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Linked List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="path/to/your/jquery.min.js"><\/script>')</script>
   </head>
   <body>
     <header>
@@ -20,7 +23,7 @@
           <input type="text" class="website-title-input" placeholder="Website Title">
           <p class="title-error">Title required</p>
           <label for="website-url-input">Website URL</label>
-          <input type="text" class="website-url-input" placeholder="Website URL">
+          <input type="url" class="website-url-input" placeholder="Website URL">
           <p class="url-error">Valid URL required</p>
           <button type="submit" class="enter-button">Enter</button>
         </form>
@@ -28,10 +31,12 @@
     </header>
     <main class="linked-list-tile-container">
       <section class="linked-list-box">
-        <article class="website-title-output"><h2>The Website Title</h2></article>
-        <article class="website-url-output">www.websiteurl.com</article>
-        <span class="read-delete-links"><article class="read-link"><h3 class="read"><a>Read</a></h3></article>
-        <article class="delete-link"><h3 class="delete"><a>Delete</a></h3></article></span>
+          <h2 class='website-title-output'>The Website Title</h2>
+          <a class='website-url-output' href='www.websiteurl.com'>www.websiteurl.com</a>
+          <span class="read-delete-links">
+          <a class="read read-link">Read</a>
+          <a class="delete delete-link">Delete</a>
+        </span>
       </section>
     </main>
   </body>
