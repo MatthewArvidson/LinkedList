@@ -5,6 +5,7 @@ body {
   font-size: 1.3em;
   margin: 0px;
   display: flex;
+  min-width: 320px;
 }
 
 header {
@@ -149,10 +150,6 @@ main {
   color: #607D8B;
 }
 
-a:website-url-output {
-  width: 1vw;
-}
-
 .read-delete-links{
   font-size: 1.5vw;
   display: flex;
@@ -178,14 +175,37 @@ a:website-url-output {
     font-size: .8em;
     display: block;
   }
-
   header {
     width: 100%;
-    height: 40vh;
+    height: auto;
   }
-
+  h1 {
+    font-size: 3em;
+  }
   main {
     width: 100%;
     height: 60vh;
+  }
+  .read-delete-links{
+    font-size: 1em;
+  }
+  .website-title-output {
+    font-size: 1.8em;
+  }
+  .website-url-output {
+    font-size: 1.3em;
+  }
+  input {
+    margin-top: .5em;
+  }
+  button {
+    margin-top: .5em;
+  }
+  .linked-list-box {
+    margin: auto;
+    border: 1px solid #607d8b;
+    background-color: #ffffff;
+    width: 86vw;
+    margin-top: 20px;
   }
 }
