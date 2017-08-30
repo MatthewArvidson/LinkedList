@@ -10,6 +10,7 @@ var websiteUrlUserInput = document.querySelector('.website-url-input');
 //****Event Listeners****
 
 enterButton.addEventListener('click', userInputErrorMessage);
+enterButton.addEventListener('click', validateUrlInput);
 
 //****Functions****
 
@@ -20,7 +21,7 @@ function userInputErrorMessage() {
     alert("Needs both Title and URL to generate Linked List Card")
   }
   else {
-    generateCard(event)
+    // generateCard(event)
       event.preventDefault();
   }
 };
@@ -55,4 +56,18 @@ function deleteLink () {
 
 function toggleMarkAsRead() {
   $(this).closest('section').toggleClass('linked-list-box-read');
+}
+
+function validateUrlInput () {
+  var regEx1 = /^(ftp|http|https):\/\/[^ "]+$/;
+  var regEx2 = /^[a-zA-Z0-9\-\.]+\.(com|org|net|mil|edu|io|COM|ORG|NET|MIL|EDU|IO)$/;
+  if (regEx1.test(websiteUrlUserInput.value)) {
+    generateCard();
+  }else if (regEx2.test(websiteUrlUserInput.value)){
+    websiteUrlUserInput.value = 'http://' + websiteUrlUserInput.value;
+    generateCard();
+  }
+  else{
+    
+  }
 }
