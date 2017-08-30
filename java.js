@@ -24,7 +24,7 @@ var websiteUrlUserInput = document.querySelector('.website-url-input');
 // Delete Button Event Listener
 // deleteButton.addEventListener('click', removeCard);
 // Enter Button Event Listner
-enterButton.addEventListener('click', generateCard);
+enterButton.addEventListener('click', userInputErrorMessage);
 // Website URL Event Listener
 // websiteTitleUserInput.addEventListener('keypress' enableEnterButton());
 // Website Title Event Listener
@@ -37,9 +37,20 @@ enterButton.addEventListener('click', generateCard);
 
 //****Functions****
 
+function userInputErrorMessage() {
+  var titleInput = websiteTitleUserInput.value;
+  var urlInput = websiteUrlUserInput.value;
+  if (titleInput === "" || urlInput === "") {
+    alert("Needs both Title and URL to generate Linked List Card")
+  }
+  else {
+    generateCard(event)
+      event.preventDefault();
+  }
+};
+
 // Function that builds Linked List Boxes
-function generateCard(event) {
-  event.preventDefault();
+function generateCard() {
   var websiteTitle = document.querySelector('.website-title-input').value;
   var websiteUrl = document.querySelector('.website-url-input').value;
   mainContent.insertAdjacentHTML('afterbegin', `<section class="linked-list-box">
@@ -73,7 +84,7 @@ $(".linked-list-tile-container").on('click', '.delete', deleteLink);
 $(".linked-list-tile-container").on('click', '.read', toggleMarkAsRead);
 
 function deleteLink () {
-  $(this).parent().parent().parent().remove();
+  $(this).parent().parent().remove();
 }
 
 //Toggle Mark As Read
