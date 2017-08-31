@@ -5,12 +5,12 @@ var mainContent = document.querySelector('.linked-list-tile-container');
 var websiteTitleUserInput = document.querySelector('.website-title-input');
 var websiteUrlUserInput = document.querySelector('.website-url-input');
 
-//****Objects****
-
 //****Event Listeners****
 
-enterButton.addEventListener('click', userInputErrorMessage);
+// enterButton.addEventListener('click', userInputErrorMessage);
 enterButton.addEventListener('click', validateUrlInput);
+websiteTitleUserInput.addEventListener('keyup', userInputErrorMessage);
+websiteUrlUserInput.addEventListener('keyup', userInputErrorMessage);
 
 //****Functions****
 
@@ -18,11 +18,10 @@ function userInputErrorMessage() {
   var titleInput = websiteTitleUserInput.value;
   var urlInput = websiteUrlUserInput.value;
   if (titleInput === "" || urlInput === "") {
-    alert("Needs both Title and URL to generate Linked List Card")
+    enterButton.disabled = true;
   }
   else {
-    // generateCard(event)
-      event.preventDefault();
+    enterButton.disabled = false;
   }
 };
 
@@ -44,6 +43,7 @@ function clearInputsResetFocus() {
   $('.website-title-input').val('');
   $('.website-url-input').val('');
   $('.website-title-input').focus();
+  enterButton.disabled = true;
 }
 
 $(".linked-list-tile-container").on('click', '.delete', deleteLink);
@@ -68,6 +68,6 @@ function validateUrlInput () {
     generateCard();
   }
   else{
-    
+    alert('Please add a valid Title and URL.')
   }
 }

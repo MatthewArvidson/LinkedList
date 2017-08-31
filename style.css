@@ -71,6 +71,10 @@ button:hover {
   background-color: #ffd773;
 }
 
+.enter-button:disabled {
+  background-color: lightgrey;
+}
+
 .linked-list-box {
   margin: 1em;
   border: 1px solid #607d8b;
