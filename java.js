@@ -8,6 +8,8 @@ var websiteUrlUserInput = document.querySelector('.website-url-input');
 enterButton.addEventListener('click', validateUrlInput);
 websiteTitleUserInput.addEventListener('keyup', userInputErrorMessage);
 websiteUrlUserInput.addEventListener('keyup', userInputErrorMessage);
+$(".linked-list-tile-container").on('click', '.delete', deleteLink);
+$(".linked-list-tile-container").on('click', '.read', toggleMarkAsRead);
 // listenForClicks.addEventListener('click', readLinkCounter);
 //****Functions****
 // function readLinkCounter() {
@@ -52,8 +54,6 @@ function clearInputsResetFocus() {
   $('.website-title-input').focus();
   enterButton.disabled = true;
 }
-$(".linked-list-tile-container").on('click', '.delete', deleteLink);
-$(".linked-list-tile-container").on('click', '.read', toggleMarkAsRead);
 function deleteLink () {
   $(this).parent().parent().remove();
 }
